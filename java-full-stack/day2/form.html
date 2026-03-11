@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration</title>
+<style>
+    /*Element Selector*/
+    body{
+        font-family: 'Times New Roman', Times, serif;
+        background-color: rgb(238, 237, 237);
+    }
+
+    /*Class Selector*/
+    .container{
+        width: 400px;
+        margin: auto;
+        padding: 20px;
+        border: 2px solid black;
+    }
+
+    /*id-selector*/
+    #form-title{
+        color:black;
+        text-align: center;
+    }
+
+    /*Element Selector*/
+    input{
+        width: 100%;
+        padding: 4px;
+        margin-top: 5px;
+    }
+
+    label{
+        font-weight: bold;
+    }
+
+    .gender-options input{
+        width:auto
+    }
+    
+    button{
+        padding: 10px;
+        margin-top: 2px;
+        color: white;
+        background-color: #4caf50;
+    }
+    
+
+</style>
+
+</head>
+
+
+<body>
+
+<h2 id="form-title">Student Registration Form</h2>
+
+<div class="container">
+
+<form>
+
+<label for="firstName">First Name</label>
+<input type="text" id="firstName" required>
+
+<br><br>
+
+<label for="lastName">Last Name</label>
+<input type="text" id="lastName" required>
+
+<br><br>
+
+<label for="email">Email</label>
+<input type="email" id="email" required>
+
+<br><br>
+
+<label for="phone">Phone Number</label>
+<input type="tel" id="phone" required>
+
+<br><br>
+
+<label for="age">Age</label>
+<input type="number" id="age" min="18" required>
+
+<br><br>
+
+<label>Gender</label>
+
+<div class="gender-options">
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+</div>
+
+<br><br>
+
+<label for="course">Course</label>
+
+<select id="course">
+<option>Select Course</option>
+<option>Artificial Intelligence</option>
+<option>Machine Learning</option>
+<option>Data Science</option>
+<option>Cyber Security</option>
+</select>
+
+<br><br>
+
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
